@@ -3,7 +3,7 @@
 ```gcc huff.c -lm -o huff``` 
 # Usage
 ```
-huff file
+$ ./huff file
 ```
 # Compression example
 Input file:
