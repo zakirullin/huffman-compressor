@@ -50,7 +50,7 @@ int *calc_freq(byte *buf, int size)
     return freq;
 }
 
-// Right symbols aware sorting
+// Order aware sorting
 void sort(int *freq, int *symb)
 {
     int *pos = malloc(sizeof(int) * ALP_SIZE); 
