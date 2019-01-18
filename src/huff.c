@@ -14,8 +14,8 @@ typedef int bool;
 #define BITS_PER_BYTE 8
 #define MAX_LENGTH 32
 
-#define FETCH_BIT(buf, n) ( (byte)(buf[ n / BITS_PER_BYTE] << (n % BITS_PER_BYTE)) >> (BITS_PER_BYTE - 1))
-#define GET_N_LAST_BITS(code, n) ( code & (byte)( pow(2, n) - 1))
+#define FETCH_BIT(buf, n) ((byte)(buf[n / BITS_PER_BYTE] << (n % BITS_PER_BYTE)) >> (BITS_PER_BYTE - 1))
+#define GET_N_LAST_BITS(code, n) (code & (byte)(pow(2, n) - 1))
 
 int get_file_size(FILE *fp)
 {
@@ -50,7 +50,7 @@ int *calc_freq(byte *buf, int size)
     return freq;
 }
 
-// Sort care about right symb
+// Right symbols aware sorting
 void sort(int *freq, int *symb)
 {
     int *pos = malloc(sizeof(int) * ALP_SIZE); 
