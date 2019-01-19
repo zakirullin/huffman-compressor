@@ -4,11 +4,9 @@
 
 typedef unsigned int uint;
 typedef unsigned char byte;
-typedef int bool;
 
 #define FILE_NAME_ARG 1
 #define MIN_ARGS 2
-
 #define ALP_SIZE 256
 #define ALP_LAST (ALP_SIZE - 1)
 #define BITS_PER_BYTE 8
