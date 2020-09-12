@@ -1,7 +1,7 @@
 # Compressor based on [Canonical Huffman code](https://en.wikipedia.org/wiki/Canonical_Huffman_code)
 # Build
 ```
-$ gcc huff.c -lm -o huff
+$ cc huff.c -lm -o huff
 ``` 
 # Usage
 ```
